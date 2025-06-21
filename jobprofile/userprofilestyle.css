@@ -278,21 +278,31 @@ hr{
     gap:20px;
     border: 2px solid white;
 }
-.bio-header{
+.bio-in-a-row{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 20px;
     position: relative;
     top: 20px;
-    font-size: 22px;
-    font-weight: bolder;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+.user-icon {
+    font-size: 20px;
     color: black;
-      
+    position: relative;
+}
+.bio-header{
+ position:relative;
+ font-size: 24px;
+ font-weight: bolder;    
 }
 .bio-line{
  position: relative;
-    top: 20px;
+    top: 25px;
     height: 1px;
     width: 80%;
     background-color: black;
@@ -322,6 +332,45 @@ hr{
     justify-content: space-evenly;
     align-items: center;
     width: 80%;
+}
+.experience-title{
+    position: relative;
+    top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.experience-span{
+    font-weight: bolder;
+    font-size: 20px;
+}
+.experience-line {
+  position: relative;
+
+  height: 2px;
+  background-color: black;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+}
+.experience-content {
+    position: relative;
+    top: 50px;    
+}
+.first-experience {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-evenly;
+    align-items: center;
+    gap:130px;
+
+    font-size: 18px;
+    font-weight: bold;
+    
 
 }
 
