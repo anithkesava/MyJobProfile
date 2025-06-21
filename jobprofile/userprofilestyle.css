@@ -59,7 +59,7 @@
 } */
 
 .inside-custom-card{
-    top: 50px;
+    top: 20px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -89,11 +89,10 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 100%;
-    gap: 10px;   
+    width: 100%;  
 }
+
 .name-span{
-    font-family:sans-serif;
     font-size: 24px;
     font-weight: bolder;
     color: black;
@@ -104,6 +103,14 @@
     font-weight: bolder;
     color: black;
     font-style: normal;
+}
+.double-quotes{
+    font-size:20px;
+    font-weight: bolder;
+    color: orange;
+    font-style: italic;
+    position: relative;
+    top: 10px;
 }
 .make-the-description-center{
     padding:20px;
@@ -123,32 +130,113 @@
     height: 100%;
     width: 100%;
 }
+.custom-span{
+font-family:'roboto', sans-serif;
+font-size: 16px;
+font-weight: 700;
+}
 .nested-box{
+    padding: 20px;
     top:12px;
     position: relative;
-    height: 300px;
-    width: 450px;
-    border: 8px solid white;
-    background-color: bisque;
+    height: 330px;
+    width: 420px;
+    border: 5px solid white;
+    background-color: #f0f0f0;
     border-radius: 12px;
    
 }
-.inside-nested-box{
-    position: relative;
-    left:20px;
-    height: 100%;
-    width: 100%;
+.nested-box-alignment{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    height: 100%;
+    width: 100%;
     gap: 10px;
 }
-.nested-box span{
+.make-it-a-single-row{
+    padding: 10px;
+    display: flex-start;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+}
+.grid-layout{
+    position: relative;
+    top:20px;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap:10px 50px;
+    padding: 20px;
+    justify-content: space-evenly;
+    align-items: center ;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
     font-size: 16px;
-    font-weight: 600;
+}
+.box{
+    height: 30px;
+    width: 120px;;
+    background-color: chocolate;
+    border-radius: 2px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: white;
+}
+.font-aw{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 2px;
+}
+hr{
+    position: relative;
+    top: 20px;
+    height: 10px;
+    width: 80%;
+    height: 100%;
+    background-color:  black;
+    border: none;
+    padding: 1px;
+}
+.key-skills {
+    position: relative;
+    top:20px;
+    display: flex;
+    flex-direction: row;   
+    column-gap: 20px;
+    justify-content: flex-start;
+    align-items:flex-start
+}
+.key-skills-span{
+    font-weight: bolder;
+    font-size: 18px;
     color: black;
-    font-style: normal;
+
+}
+.email-span {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    background-color: bisque;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 25px;
+    width:230px;
+    border-radius: 10px;
+    padding: 5px;
+    gap:20px;
+    border: 2px solid white;
 }
 
 
