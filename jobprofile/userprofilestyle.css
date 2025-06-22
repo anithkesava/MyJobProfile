@@ -9,7 +9,7 @@
     padding: 0px;    
     overflow: hidden;
     width: 100%;
-    height: 100%;
+    height: 97%;
     background-color: white;
     border-radius: 20px;
 }
@@ -32,6 +32,15 @@
     bottom: -40%;
     left: 30%;
 } 
+.top-middle-circle{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    background-color: blue;
+    border-radius: 50%;
+    right: 20%;
+    top:-20%;
+}
 .lower-right-circle{
     position: absolute;
     height: 400px;
@@ -41,25 +50,47 @@
     right:-60px;
     bottom:-100px;
 }
-
+.lower-left-circle{
+    position: absolute;
+    
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    bottom:-5%;
+    left:-5%;
+    background-color: blue;
+}
 .wrap-card {    
     position: relative;
     top: 50px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     gap: 20px;
 }
-
+@media (max-width: 300px) {
+    .wrap-card {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 .custom-card{
-    position: relative;
-    height: 800px;
     width: 500px;
+    height: 800px;
+    position: relative;
     background-color:burlywood;
     border-radius: 20px;
     transition: transform 0.5s ease-in-out;
-
+}
+@media (max-width:1000px)
+{
+    .custom-card {
+        top:-20px;
+        width: 300px;
+        height: 400px;
+    }
 }
 .custom-card:hover{
   transform: scale(1.05);
@@ -242,6 +273,13 @@ font-weight: 700;
     align-content: center;
     align-items: center;
     color: white;
+    transition: 0.3s ease-in-out;
+}
+.box:hover{
+    font-family: sans-serif;
+    background-color:white;
+    color: blue;
+    transform: scale(1.05);
 }
 .font-aw{
     display: inline-flex;
@@ -592,6 +630,43 @@ hr{
     border: none;
 }
 
- 
+ .custom-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    padding: 10px; 
+    position: fixed;
+    bottom:10px;
+    z-index: 999;
+    
+ }
+.project-timeperiod-underline{
+    position: relative;
+    top: 80px;
+    height: 2px;
+    width: 60%;
+    padding: 0px;
+    background-color: black;
+    left: 5%;
+}
+.GET-experience-underline{
+    position: relative;
+    top: 50px;
+    height: 2px;
+    width: 60%;
+    padding: 0px;
+    background-color: black;
+    left: 5%;
+}
+.software-engineer-experience{
+    position: relative;
+    top: 0px;
+    height: 2px;
+    width: 60%;
+    padding: 0px;
+    background-color: black;
+    left: 5%;
+}
 
 
