@@ -1,4 +1,3 @@
 console.log(window.innerWidth, window.innerHeight);
 
-// screenwidth: 1536.
-//screenheight: 730
+console.log('can i learn js');
